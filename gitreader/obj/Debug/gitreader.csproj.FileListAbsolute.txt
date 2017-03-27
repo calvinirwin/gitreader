@@ -80,3 +80,13 @@ C:\DevProjects\gitreader\gitreader\gitreader\bin\Microsoft.Owin.Security.Microso
 C:\DevProjects\gitreader\gitreader\gitreader\obj\Debug\gitreader.csprojResolveAssemblyReference.cache
 C:\DevProjects\gitreader\gitreader\gitreader\obj\Debug\gitreader.dll
 C:\DevProjects\gitreader\gitreader\gitreader\obj\Debug\gitreader.pdb
+C:\DevProjects\gitreader\gitreader\gitreader\bin\lib\win32\x64\git2-a5cf255.dll
+C:\DevProjects\gitreader\gitreader\gitreader\bin\lib\win32\x64\git2-a5cf255.pdb
+C:\DevProjects\gitreader\gitreader\gitreader\bin\lib\win32\x86\git2-a5cf255.dll
+C:\DevProjects\gitreader\gitreader\gitreader\bin\lib\win32\x86\git2-a5cf255.pdb
+C:\DevProjects\gitreader\gitreader\gitreader\bin\lib\osx\libgit2-a5cf255.dylib
+C:\DevProjects\gitreader\gitreader\gitreader\bin\lib\linux\x86_64\libgit2-a5cf255.so
+C:\DevProjects\gitreader\gitreader\gitreader\bin\LibGit2Sharp.dll.config
+C:\DevProjects\gitreader\gitreader\gitreader\bin\LibGit2Sharp.dll
+C:\DevProjects\gitreader\gitreader\gitreader\bin\LibGit2Sharp.pdb
+C:\DevProjects\gitreader\gitreader\gitreader\bin\LibGit2Sharp.xml

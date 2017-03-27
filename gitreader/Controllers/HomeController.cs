@@ -15,8 +15,14 @@ namespace gitreader.Controllers
             //ViewBag.Message = data;
 
             //commit data
-            string data = new gitreader.data.GitHubReader().GetCommitData("calvinirwin", "bb-mm-webhook");
+            //string data = new gitreader.data.GitHubReader().GetCommitData("calvinirwin", "bb-mm-webhook");
+            //ViewBag.Message = data;
+
+
+            //get repos
+            string data = new gitreader.data.GitHubReader().CloneRepos("calvinirwin");
             ViewBag.Message = data;
+
 
             return View();
         }

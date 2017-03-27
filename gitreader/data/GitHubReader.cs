@@ -1,4 +1,5 @@
 ﻿using gitreader.data.git;
+using LibGit2Sharp;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -58,7 +59,32 @@ namespace gitreader.data
 
 
 
+        public string CloneRepos(string owner)
+        {
 
+
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri(String.Format("https://api.github.com/users/{0}/repos", owner));
+            client.DefaultRequestHeaders.Add("User-Agent", "calvinirwin");
+            var response = client.GetAsync("").Result;
+            response.EnsureSuccessStatusCode();
+
+            //string status = response.StatusCode + " " + response.ReasonPhrase + Environment.NewLine;
+            string responseBodyAsText ="";
+            GitRepo[] repos = JsonConvert.DeserializeObject<GitRepo[]>(responseBodyAsText);
+
+            foreach (GitRepo repo in repos.ToList<GitRepo>())
+            {
+                if (repo.Name != "gitreader")
+                {
+                    Repository.Clone(String.Format("https://github.com/{0}/{1}.git", owner, repo.Name), String.Format(@"C:/DevProjects/{0}", repo.Name));
+                    responseBodyAsText += " Cloned : " + repo.FullName + " (" + repo.Name + ")";
+                }
+            }
+
+            return responseBodyAsText;
+
+        }
 
     }
 }
